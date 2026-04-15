@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissor</title>
+    <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="rps.css">
 </head>
 <body>
+
+<div class="container">
     <div class="parent">
-        <div class="child">
-            <h1>Rock Paper Scissor</h1>
-                <div class="rock">
-                    <button>Rock</button>
-                </div>
-                <div class="paper">
-                    <button>Paper</button>
-                </div>
-                <div class="scissor">
-                    <button>Scissor</button>
-                </div>
+        <h1>Rock Paper Scissor</h1>
+
+        <div class="buttons">
+            <button onclick="play('rock')">
+                <img src="pics/rock.png">
+            </button>
+            <button onclick="play('paper')">
+                <img src="pics/paper.png">
+            </button>
+            <button onclick="play('scissor')">
+                <img src="pics/scissor.png">
+            </button>
         </div>
+
+        <h2 id="score">Gon: 0 | Neferpitou: 0</h2>
+        <h2 id="result">Choose your move</h2>
+
+        <button onclick="resetScore()">Reset</button>
     </div>
+</div>
+
+<script src="rps.js"></script>
 </body>
 </html>
